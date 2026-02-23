@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrowthX Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#111;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 5%;
+background:white;
+position:sticky;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#2563eb;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+padding:80px 5%;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.hero-text{
+flex:1 1 400px;
+}
+
+.hero-text h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero-text p{
+color:#555;
+margin-bottom:25px;
+}
+
+.btn{
+background:#2563eb;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+}
+
+.hero-img{
+flex:1 1 350px;
+}
+
+.hero-img img{
+width:100%;
+border-radius:16px;
+}
+
+/* SERVICES */
+.section{
+padding:70px 5%;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* PRICING */
+.price{
+font-size:32px;
+color:#2563eb;
+margin:15px 0;
+}
+
+/* CONTACT */
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero-text h1{
+font-size:30px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">GrowthX</div>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Grow Your Business Faster 🚀</h1>
+<p>We help brands scale with powerful digital marketing strategies.</p>
+<a href="#" class="btn">Get Started</a>
+</div>
+
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900">
+</div>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2>
+
+<div class="cards">
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Rank your website on Google and get more traffic.</p>
+</div>
+
+<div class="card">
+<h3>Social Media Marketing</h3>
+<p>Grow your brand presence across all platforms.</p>
+</div>
+
+<div class="card">
+<h3>Paid Ads</h3>
+<p>High converting ads that bring real customers.</p>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="section">
+<h2>Pricing Plans</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Starter</h3>
+<div class="price">$29</div>
+<p>Perfect for beginners</p>
+</div>
+
+<div class="card">
+<h3>Pro</h3>
+<div class="price">$79</div>
+<p>Best for growing brands</p>
+</div>
+
+<div class="card">
+<h3>Enterprise</h3>
+<div class="price">$149</div>
+<p>For big businesses</p>
+</div>
+</div>
+</section>
+
+<section class="section contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="4" placeholder="Your Message"></textarea>
+</section>
+
+<footer>
+© 2026 GrowthX Agency
+</footer>
+
+</body>
+  </html>
